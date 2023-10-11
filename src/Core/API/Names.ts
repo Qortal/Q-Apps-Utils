@@ -1,17 +1,5 @@
-import {
-  GetRequestData,
-  SearchTransactionResponse,
-  TransactionSearchParams,
-} from "./Interfaces";
-import { stringIsEmpty } from "../Numbers/StringNumbers";
-
-export const searchTransactions = async (params: TransactionSearchParams) => {
-  return (await qortalRequest({
-    action: "SEARCH_TRANSACTIONS",
-    ...params,
-  })) as SearchTransactionResponse[];
-};
-
+import { stringIsEmpty } from "../../Numbers/StringNumbers";
+import { GetRequestData } from "../Interfaces";
 type AccountName = { name: string; owner: string };
 
 export const getAccountNames = async (

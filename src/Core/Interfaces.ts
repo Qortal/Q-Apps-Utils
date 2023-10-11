@@ -1,4 +1,4 @@
-import { ConfirmationStatus, TransactionType } from "./Types";
+import { ConfirmationStatus, TransactionType } from ".//Types";
 
 export interface GetRequestData {
   limit?: number;
