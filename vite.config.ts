@@ -5,7 +5,7 @@ import { resolve } from "path";
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, "index.js"),
+      entry: resolve(__dirname, "index.ts"),
       name: "QortalUtils",
     },
   },
