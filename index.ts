@@ -2,7 +2,6 @@ export * from "./src/Core/Interfaces";
 export * from "./src/Core/SendCoin";
 export * from "./src/Core/Types";
 export * from "./src/Core/API/Names";
-export * from "./src/Core/API/QortalRequest";
 export * from "./src/Core/API/Transactions";
 export * from "./src/Numbers/Colors";
 export * from "./src/Numbers/NumberConversion";
