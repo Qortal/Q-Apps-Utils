@@ -1,5 +1,5 @@
-import { stringIsEmpty } from "../../Numbers/StringNumbers";
-import { GetRequestData } from "../Interfaces";
+import { stringIsEmpty } from "../TypescriptUtils/Numbers/StringNumbers";
+import { GetRequestData } from "./Utils/Interfaces";
 type AccountName = { name: string; owner: string };
 
 export const getAccountNames = async (
@@ -18,4 +18,11 @@ export const getAccountNames = async (
   });
 
   return emptyNamesFilled.length > 0 ? emptyNamesFilled : [namelessAddress];
+};
+
+export const getBalance = async (address: string) => {
+  return (await qortalRequest({
+    action: "GET_BALANCE",
+    address,
+  })) as number;
 };

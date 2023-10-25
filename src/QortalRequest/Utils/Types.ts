@@ -41,3 +41,5 @@ export type TransactionType =
   | "ACCOUNT_LEVEL"
   | "TRANSFER_PRIVS"
   | "PRESENCE";
+
+export type CoinType = "QORT" | "BTC" | "LTC" | "DOGE" | "DGB" | "RVN" | "ARRR";

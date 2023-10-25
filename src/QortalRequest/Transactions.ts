@@ -1,7 +1,7 @@
 import {
   SearchTransactionResponse,
   TransactionSearchParams,
-} from "../Interfaces";
+} from "./Utils/Interfaces";
 
 export const searchTransactions = async (params: TransactionSearchParams) => {
   return (await qortalRequest({

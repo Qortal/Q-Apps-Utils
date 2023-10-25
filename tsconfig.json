@@ -2,7 +2,11 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "skipLibCheck": true,
     "declaration": true,
     "sourceMap": true,
@@ -26,6 +30,12 @@
     "esm": true
   },
   "experimentalSpecifierResolution": "node",
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "baseUrl": "./src",
   "include": ["src/**/*"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+
 }

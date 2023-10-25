@@ -1,7 +1,9 @@
+import { CoinType } from "./Utils/Types";
+
 export const sendCoin = async (
   address: string,
   amount: number,
-  coin: string
+  coin: CoinType
 ) => {
   return qortalRequest({
     action: "SEND_COIN",

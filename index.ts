@@ -1,10 +1,13 @@
-export * from "./src/Core/Interfaces";
-export * from "./src/Core/SendCoin";
-export * from "./src/Core/Types";
-export * from "./src/Core/API/Names";
-export * from "./src/Core/API/Transactions";
-export * from "./src/Numbers/Colors";
-export * from "./src/Numbers/NumberConversion";
-export * from "./src/Numbers/Numbers";
-export * from "./src/Numbers/StringNumbers";
-export * from "./src/Strings/printFunctions";
+export * from "./src/TypescriptUtils/Numbers/Colors";
+export * from "./src/TypescriptUtils/Numbers/NumberConversion";
+export * from "./src/TypescriptUtils/Numbers/Numbers";
+export * from "./src/TypescriptUtils/Numbers/StringNumbers";
+export * from "./src/TypescriptUtils/Strings/printFunctions";
+
+export * from "./src/QortalRequest/Utils/Interfaces";
+export * from "./src/QortalRequest/Utils/Types";
+
+export * from "./src/QortalRequest/getFromAddress";
+export * from "./src/QortalRequest/getFromSelf";
+export * from "./src/QortalRequest/SendCoin";
+export * from "./src/QortalRequest/Transactions";
