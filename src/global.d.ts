@@ -1,3 +1,11 @@
+type BlockchainType =
+  | "BITCOIN"
+  | "LITECOIN"
+  | "DODGECOIN"
+  | "DIGIBYTE"
+  | "RAVENCOIN"
+  | "PIRATECHAIN";
+
 type TransactionType =
   | "GENESIS"
   | "PAYMENT"
@@ -87,6 +95,10 @@ interface QortalRequestOptions {
   startBlock?: number;
   blockLimit?: number;
   txGroupId?: number;
+  blockchain?: BlockChainType;
+  maxTrades?: number;
+  inverse?: boolean;
+  property?: string;
+  data?: { customData: object };
 }
-
 declare function qortalRequest(options: QortalRequestOptions): Promise<any>;

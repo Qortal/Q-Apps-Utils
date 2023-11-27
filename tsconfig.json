@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "ESNext",
     "module": "ESNext",
     "lib": [
@@ -7,11 +8,14 @@
       "DOM.Iterable",
       "ESNext"
     ],
-    "skipLibCheck": true,
+    "outDir": "./dist",
+    "strict": true,
     "declaration": true,
+    "skipLibCheck": true,
     "sourceMap": true,
+
     /* Bundler mode */
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
@@ -20,7 +24,7 @@
     "jsx": "react-jsx",
     "noImplicitAny": false,
     /* Linting */
-    "strict": true,
+
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
@@ -35,7 +39,6 @@
       "path": "./tsconfig.node.json"
     }
   ],
-  "baseUrl": "./src",
-  "include": ["src/**/*"],
+  "include": ["src"],
 
 }

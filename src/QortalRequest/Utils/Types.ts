@@ -43,3 +43,11 @@ export type TransactionType =
   | "PRESENCE";
 
 export type CoinType = "QORT" | "BTC" | "LTC" | "DOGE" | "DGB" | "RVN" | "ARRR";
+
+export type BlockchainType =
+  | "BITCOIN"
+  | "LITECOIN"
+  | "DODGECOIN"
+  | "DIGIBYTE"
+  | "RAVENCOIN"
+  | "PIRATECHAIN";

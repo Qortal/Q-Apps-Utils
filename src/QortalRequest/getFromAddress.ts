@@ -1,5 +1,5 @@
 import { stringIsEmpty } from "../TypescriptUtils/Numbers/StringNumbers";
-import { GetRequestData } from "./Utils/Interfaces";
+import { GetRequestData } from "./Utils/Interfaces/Parameters.ts";
 type AccountName = { name: string; owner: string };
 
 export const getAccountNames = async (
