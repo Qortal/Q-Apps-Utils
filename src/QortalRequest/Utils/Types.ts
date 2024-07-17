@@ -42,12 +42,18 @@ export type TransactionType =
   | "TRANSFER_PRIVS"
   | "PRESENCE";
 
-export type CoinType = "QORT" | "BTC" | "LTC" | "DOGE" | "DGB" | "RVN" | "ARRR";
+export const Coins = ["QORT", "BTC", "LTC", "DOGE", "DGB", "RVN", "ARRR"];
+export type CoinType = (typeof Coins)[number];
 
-export type BlockchainType =
-  | "BITCOIN"
-  | "LITECOIN"
-  | "DODGECOIN"
-  | "DIGIBYTE"
-  | "RAVENCOIN"
-  | "PIRATECHAIN";
+export const ProfileCoins = ["btc", "ltc", "doge", "dgb", "rvn", "arrr"];
+export type ProfileCoinType = (typeof ProfileCoins)[number];
+export const Blockchains = [
+  "BITCOIN",
+  "LITECOIN",
+  "DOGECOIN",
+  "DIGIBYTE",
+  "RAVENCOIN",
+  "PIRATECHAIN",
+];
+
+export type BlockchainType = (typeof Blockchains)[number];

@@ -99,6 +99,7 @@ interface QortalRequestOptions {
   maxTrades?: number;
   inverse?: boolean;
   property?: string;
-  data?: { customData: object };
+  data?: { customData?: object };
+  message?: string;
 }
 declare function qortalRequest(options: QortalRequestOptions): Promise<any>;

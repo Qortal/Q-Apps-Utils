@@ -7,3 +7,7 @@ export const setNumberWithinBounds = (
   if (num < minValue) return minValue;
   return num;
 };
+
+export const numberToInt = (num: number) => {
+  return Math.floor(num);
+};
