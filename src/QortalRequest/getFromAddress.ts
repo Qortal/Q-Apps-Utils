@@ -1,4 +1,4 @@
-import { stringIsEmpty } from "../TypescriptUtils/Numbers/StringNumbers";
+import { stringIsEmpty } from "../Utils/Numbers/StringNumbers";
 import { GetRequestData } from "./Utils/Interfaces/Parameters.ts";
 type AccountName = { name: string; owner: string };
 
@@ -8,7 +8,7 @@ export const getAccountNames = async (
 ) => {
   const names = (await qortalRequest({
     action: "GET_ACCOUNT_NAMES",
-    address,
+    address: address,
     ...params,
   })) as AccountName[];
 
